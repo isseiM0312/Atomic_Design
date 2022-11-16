@@ -16,6 +16,7 @@ export default {
     backgroundColor: {
       control: { type: 'color' },
     },
+    handleClick: { action: 'clicked' }
   },
 };
 
