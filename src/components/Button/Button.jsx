@@ -8,10 +8,6 @@ function Button({ children, color = 'default', size = 'base',backgroundColor, ha
   
 export default Button;
 
-Button.propTypes = {
-  color: PropTypes.oneOf(['primary', 'default', 'danger']),
-  size: PropTypes.oneOf(['sm', 'base', 'lg']),
-  onClick: PropTypes.func.isRequired,
-};
+
 
 //参照https://reffect.co.jp/html/storybook#Args

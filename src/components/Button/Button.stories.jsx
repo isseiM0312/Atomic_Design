@@ -1,7 +1,7 @@
+import { action } from '@storybook/addon-actions';
 import Button from './Button';
-const Template = (args) => <Button {...args} />
 
-export default {
+export default {//ここがargTyoe
   title: 'atoms/Button',
   component: Button,
   argTypes: {
@@ -16,9 +16,18 @@ export default {
     backgroundColor: {
       control: { type: 'color' },
     },
-    handleClick: { action: 'clicked' }
   },
 };
+
+const something = action('something');
+
+const Template = (args) => {
+  const handleClick = (e) => {
+    something(e,'test');
+  };
+  return <Button {...args} handleClick={handleClick} />;
+};
+
 
 export const Default = Template.bind({});
 Default.args = {
