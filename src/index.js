@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Img from './components/Atoms/Img';
 import  TrashCanicon  from './components/Atoms/TrashCanIcon';
+import MediaObjectLayout from './components/Atoms/MediaObjectLayout';
+import HoverTipInteraction from './components/Atoms/HoverTipInteraction';
+import DeleteButton from './components/Mocules/DeleteButton';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TrashCanicon />
+   <DeleteButton />
   </React.StrictMode>
 );
 
