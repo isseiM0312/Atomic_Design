@@ -1,5 +1,5 @@
 import React from "react";
-import './style.css';
+import styles from './style.module.scss';
 
 const HeadingPresenter = ({
     tag:Tag,
@@ -16,7 +16,7 @@ const HeadingLinedPresenter = ({
     className,
     ...props
 }) => (
-    <Tag className = {`${className} underlined`}{...props}></Tag>
+    <Tag className = {`${className} ${styles.underlined}`}{...props}></Tag>
 )
 
 const HeadingContainer = ({

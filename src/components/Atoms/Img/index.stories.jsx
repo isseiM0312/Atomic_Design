@@ -7,4 +7,4 @@ export default {
     component: Img,
   };
 
-export const simpleImg = () => <Img width={20}></Img>
+export const simpleImg = () => <Img height = {128}></Img>

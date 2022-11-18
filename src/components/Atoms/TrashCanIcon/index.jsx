@@ -1,6 +1,6 @@
 import React from "react";
 import trashicon from './trash-can.svg';
-import './style.css'
+import styles from './styles.module.scss';
 
 
 
@@ -22,15 +22,16 @@ export const IconContainer = ({
     className,
     ...props
 }) => {
-    if (onClick) className += ' clickable';
+    if (onClick) className = `${ styles.clickable} ${className}`;
+    console.log(className)
     return (
         presenter({onClick,className,...props})
     )
 }
 
 export const TrashCanIcon = props => (
-    <IconContainer
-    presenter={presenterProps => <TrashCanIconPresenter {...presenterProps} />}
+    <IconContainer 
+    presenter={presenterProps => <TrashCanIconPresenter  {...presenterProps} />}
     {...props} />
 );
 

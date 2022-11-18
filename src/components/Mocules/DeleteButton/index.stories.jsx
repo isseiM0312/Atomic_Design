@@ -1,10 +1,11 @@
 import React from "react";
 import { action } from '@storybook/addon-actions';
 import DeleteButton from ".";
+import { withStyle } from "../../Utils/decorators";
 
 export default {
-    title: 'atoms/deletebutton',
+    title: 'mocules/deletebutton',
     component: DeleteButton
 }
 
-export const deletebutton = () => <DeleteButton onClick={action('削除ボタンがクリックされました')} />
+export const deletebutton = () => withStyle({margin:'50px'})(<DeleteButton onClick={action('削除ボタンがクリックされました。')}></DeleteButton>)

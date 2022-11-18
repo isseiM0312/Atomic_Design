@@ -7,4 +7,4 @@ export default {
     component:TrashCanIcon
 }
 
-export const icon = () => <TrashCanIcon onClick={action('hey')}/>
+export const icon = () => <TrashCanIcon onClick={action('ss')}/>
