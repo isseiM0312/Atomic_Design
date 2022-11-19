@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@storybook/addon-notes": "^5.3.21",
+    "@storybook/addon-storyshots": "^6.5.13",
     "@storybook/jest": "^0.0.10",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
