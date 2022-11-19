@@ -1,0 +1,13 @@
+@import '../../propeties.module.scss';
+
+.warning{
+    color: var(--color-warning);
+}
+
+.textbox {
+    border:1px solid #ddd;
+    border-radius: 2px;
+    color: #000;
+    font-size: .8rem;
+    padding: .5rem;
+}

@@ -7,6 +7,7 @@ import DeleteButton from "../../Mocules/DeleteButton";
 import styles from './style.module.scss';
 import image from '../../../images/img.png'
 import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
+import { containPresenter } from "../../Utils/Hoc";
 
 const NotificationPresenter = ({
     program,
@@ -49,8 +50,6 @@ export class NotificationContainer extends Component {
     }
 }
 
-const Notification = props => {
-    <NotificationContainer presenter= {presenterProps =>  <NotificationPresenter {...presenterProps}></NotificationPresenter>} {...props}/>
-}
+const Notification = containPresenter(NotificationContainer,NotificationPresenter)
 
 export default Notification;

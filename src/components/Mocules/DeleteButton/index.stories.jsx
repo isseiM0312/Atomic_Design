@@ -4,7 +4,7 @@ import DeleteButton from ".";
 import { withStyle } from "../../Utils/decorators";
 
 export default {
-    title: 'mocules/deletebutton',
+    title: 'molecules/deletebutton',
     component: DeleteButton
 }
 

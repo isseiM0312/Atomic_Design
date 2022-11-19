@@ -1,5 +1,5 @@
 import React from "react";
-import './style.css'
+import styles from './style.module.scss';
 const txtFactory = role => ({tag:Tag = 'p', size = 'm', className, ...props}) => (
     <Tag className={`${role} ${size} ${className}`} 
     {...props}></Tag>
